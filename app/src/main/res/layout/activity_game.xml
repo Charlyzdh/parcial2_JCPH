@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/app_background1">
+
+    <GridLayout
+        android:id="@+id/grid_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="251dp"
+        android:columnCount="3"
+        android:rowCount="3"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/button_00"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_01"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_02"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_10"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_11"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_12"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_20"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_21"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_22"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:textSize="24sp" />
+
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="157dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grid_layout">
+
+        <Button
+            android:id="@+id/button_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:onClick="goToMenu"
+            android:text="Volver" />
+
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:textSize="14sp"
+            app:icon="@android:drawable/ic_menu_revert" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
